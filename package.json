@@ -1,0 +1,34 @@
+{
+  "name": "@optiwari.india/http-error",
+  "version": "1.0.0",
+  "description": "Generate error messages from JS Based Web Application with error codes and other status options.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports":{
+    ".":{
+      "import":"./dist/index.js",
+      "types":"./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly":"npm run build"
+  },
+  "keywords": [
+    "http-error",
+    "express-error",
+    "web-error"
+  ],
+  "license": "MIT",
+  "author": "Om Prakash Tiwari <optiwari.india@gmail.com>",
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "rimraf": "^6.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
